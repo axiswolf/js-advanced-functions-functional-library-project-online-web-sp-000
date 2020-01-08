@@ -9,18 +9,21 @@ const fi = (function() {
       // calls alert properly on object values
       // returns the original collection
       if (Array.isArray(collection) == true) {
-        for (const element of collection){
+        // iterates over a collection of elements
+        for (const element of collection) { 
+          // passes each element in turn to a callback function
           cb(element, collection)
         }
       } else {
         for (let key in collection) {
+          // if collection is a js obj, callback's argument will be value, key, collection
           cb(key, collection[key], collection)
         }
       }
       return collection;
     },
 
-    map: function() {
+    map: function(collection, cb) {
       // successfully returns a correctly populated array
       // successfully returns a correctly populated array from modified object values
     },
