@@ -50,8 +50,8 @@ const fi = (function() {
       return acc
     },
 
-    find: function(collection, input) {
-      for (const element of collection) {
+    find: function(arr, input) {
+      for (const element of arr) {
         if (input(element)) {
           return true;
         }
