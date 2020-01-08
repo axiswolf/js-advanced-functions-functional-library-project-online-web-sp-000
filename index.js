@@ -51,13 +51,14 @@ const fi = (function() {
     },
 
     find: function(collection, predicate) {
-      for (const element of collection) {
-        if (predicate(element)) {
-          return true;
-        }
-      }
-      return false;
-    },
+      if (!(collection instanceof Array))
+        collection = Object.values(collection)
+
+      for (let idx = 0; idx < collection.length; idx++)
+        if (predicate(collection[idx])) return collection[idx]
+
+      return undefined
+    },	    
 
 
   }
