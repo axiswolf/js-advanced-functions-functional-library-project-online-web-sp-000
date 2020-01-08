@@ -26,6 +26,19 @@ const fi = (function() {
     map: function(collection, cb) {
       // successfully returns a correctly populated array
       // successfully returns a correctly populated array from modified object values
+      let newArray = [];
+      if (Array.isArray(collection)===true) {
+        for (const element of collection) {
+          let newVal = cb(element, collection)
+          newArray.push(newVal)
+        }
+      } else {
+        for (let key in collection) {
+          let newVal = cb(collection[key])
+          newArray.push(newVal)
+        }
+      }
+      return newArray;
     },
 
     reduce: function() {
