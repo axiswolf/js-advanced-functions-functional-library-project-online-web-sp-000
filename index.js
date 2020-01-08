@@ -45,7 +45,7 @@ const fi = (function() {
       //returns the correct reduced value when passed an accumulator
       //returns the correct reduced value when not passed an accumulator
       for (const element of collection) {
-        acc = cb(acc, element, collection) 
+        acc = cb(acc, element, collection)
       }
       return acc
     },
