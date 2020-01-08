@@ -79,6 +79,7 @@ const fi = (function() {
     },
 
     size: function(collection) {
+      return (collection instanceof Array) ? collection.length:Object.keys(collection).length
 
     },
 
