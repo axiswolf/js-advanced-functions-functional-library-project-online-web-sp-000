@@ -58,7 +58,7 @@ const fi = (function() {
         if (predicate(collection[idx])) return collection[idx]
 
       return undefined
-    },	    
+    },
 
 
   }
