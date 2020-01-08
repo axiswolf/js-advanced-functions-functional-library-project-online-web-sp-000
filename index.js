@@ -41,9 +41,13 @@ const fi = (function() {
       return newArray;
     },
 
-    reduce: function() {
+    reduce: function(collection, cb, acc) {
       //returns the correct reduced value when passed an accumulator
       //returns the correct reduced value when not passed an accumulator
+      for (const element of collection) {
+        acc = cb(acc, element, collection) 
+      }
+      return acc
     },
 
     functions: function() {
