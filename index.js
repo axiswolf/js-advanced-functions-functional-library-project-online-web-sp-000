@@ -54,6 +54,7 @@ const fi = (function() {
       for (const element of arr) {
         if (input(element)) {
           return true;
+          return input;
         }
       }
       return false;
