@@ -66,15 +66,15 @@ const fi = (function() {
 
       return undefined
     },
-    filter: function() {
+    filter: function(collection, predicate) {
 
     },
 
-    size: function() {
+    size: function(collection) {
 
     },
 
-    first: function() {
+    first: function(array, [n]) {
 
     },
 
