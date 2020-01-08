@@ -50,11 +50,10 @@ const fi = (function() {
       return acc
     },
 
-    find: function(arr, input) {
-      for (const element of arr) {
-        if (input(element)) {
+    find: function(collection, predicate) {
+      for (const element of collection) {
+        if (predicate(element)) {
           return true;
-          return input;
         }
       }
       return false;
