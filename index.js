@@ -84,7 +84,7 @@ const fi = (function() {
     },
 
     first: function(array, stop=false) {
-      return (stop) ? array.slice(0,stop) : collection[0]
+      return (stop) ? array.slice(0,stop) : array[0]
     },
 
     last: function(collection, start=false) {
