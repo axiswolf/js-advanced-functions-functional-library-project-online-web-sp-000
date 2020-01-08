@@ -69,10 +69,13 @@ const fi = (function() {
     filter: function(collection, predicate) {
       if (!(collection instanceof Array))
         collection = Object.values(collection)
-        const newArray=[]
+        
+        const newArray = []
+        
         for (let i = 0; i < collection.length; i++)
         if (predicate(collection[i]))
         newArray.push(collection[i])
+        return newArray
     },
 
     size: function(collection) {
