@@ -70,6 +70,10 @@ const fi = (function() {
 
     },
 
+    size: function() {
+      
+    },
+    
     first: function() {
 
     },
