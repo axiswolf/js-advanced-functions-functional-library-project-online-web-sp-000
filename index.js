@@ -68,47 +68,47 @@ const fi = (function() {
     },
 
     filter: function() {
-      
+
     }
 
     size: function() {
-      
+
     }
 
     first: function() {
-      
+
     }
 
     last: function() {
-      
+
     }
 
     compact: function() {
-      
+
     }
 
     sortBy: function() {
-      
+
     }
 
     flatten: function() {
-      
+
     }
 
     uniq: function() {
-      
+
     }
 
     keys: function() {
-      
+
     }
 
     values: function() {
-      
+
     }
 
     functions: function() {
-      
+
     }
   }
 })()
