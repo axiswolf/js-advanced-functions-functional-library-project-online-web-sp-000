@@ -10,7 +10,7 @@ const fi = (function() {
       // returns the original collection
       if (Array.isArray(collection) == true) {
         // iterates over a collection of elements
-        for (const element of collection) { 
+        for (const element of collection) {
           // passes each element in turn to a callback function
           cb(element, collection)
         }
